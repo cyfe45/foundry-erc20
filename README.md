@@ -1,66 +1,47 @@
-## Foundry
+# OurToken - ERC20 Token Implementation
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+OurToken is a simple ERC20 token implementation built on the Ethereum blockchain using Solidity. This project demonstrates basic token functionality including minting, burning, and transferring tokens.
 
-Foundry consists of:
+## Features
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- ERC20 compliant token
+- Minting new tokens
+- Burning existing tokens
+- Transferring tokens between addresses
+- Initial supply set at deployment
 
-## Documentation
+## Contract Details
 
-https://book.getfoundry.sh/
+- Name: OurToken
+- Symbol: OT
+- Decimals: 18 (default for ERC20)
+- Initial Supply: 100 ether (100 * 10^18 tokens)
 
-## Usage
+## Project Structure
 
-### Build
+- `src/OurToken.sol`: Main token contract
+- `script/DeployOurToken.sol`: Deployment script
+- `test/OurTokenTest.t.sol`: Comprehensive test suite
 
-```shell
-$ forge build
-```
+## Getting Started
 
-### Test
+### Prerequisites
 
-```shell
-$ forge test
-```
+- [Foundry](https://book.getfoundry.sh/getting-started/installation.html)
 
-### Format
+### Installation
 
-```shell
-$ forge fmt
-```
+1. Clone the repository:
+   ```
+   git clone https://github.com/your-username/our-token.git
+   cd our-token
+   ```
 
-### Gas Snapshots
+2. Install dependencies:
+   ```
+   forge install
+   ```
 
-```shell
-$ forge snapshot
-```
+### Compilation
 
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+Compile the contracts:
