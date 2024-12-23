@@ -42,6 +42,3 @@ OurToken is a simple ERC20 token implementation built on the Ethereum blockchain
    forge install
    ```
 
-### Compilation
-
-Compile the contracts:
